@@ -26,8 +26,7 @@ class Main {
 class Solution {
     public int absolute(int I) {
         
-        if(I==0)
-        return 0;
+        
         
         if(I<0)
         {
