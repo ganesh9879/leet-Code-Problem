@@ -34,14 +34,12 @@ class Main {
 
 
 class Solution{
-    public int digitsInFactorial(int N){
-        double sum = 0;
-        
-        while(N > 0) {
-            sum += Math.log10(N);
-            N--;
-        }
-        
-        return (int)(sum + 1); 
-    }
+   public int digitsInFactorial(int N){
+       double sum = 0;
+       for(int i = 1; i <= N; i++)
+           sum = sum + Math.log10(i);
+           sum= Math.floor(sum)+1.0;
+       return (int)sum;
+   }
 }
+ 
