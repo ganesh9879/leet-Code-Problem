@@ -18,16 +18,16 @@ bool isPrime(int N)
         return false;
         
         if(N==2 || N==3)
-        return false;
+        return true;
         
         if(N%2==0 || N%3==0)
-        return true;
+        return false;
         
         for(int i=5; i*i<=N;i=i+6)
             if(N%i==0 || N%(i+2)==0)
-                return true;
+                return false;
       
-        return false;
+        return true;
     }
     
     
@@ -39,7 +39,7 @@ bool isPrime(int N)
       for(int i=2;i*i<=N;i++)
       {
           
-          if(isPrime(i)== false)
+          if(isPrime(i))
           {
           if(i*i<=N)
           count++;
