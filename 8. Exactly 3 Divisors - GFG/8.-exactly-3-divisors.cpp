@@ -15,7 +15,7 @@ class Solution{
 bool isPrime(int N)
     {
         if(N==1)
-        return true;
+        return false;
         if(N==2 || N==3)
         return false;
         if(N%2==0 || N%3==0)
@@ -23,15 +23,13 @@ bool isPrime(int N)
         for(int i=5; i*i<=N;i=i+6)
             if(N%i==0 || N%(i+2)==0)
                 return true;
+      
         return false;
-        
     }
     
     
     int exactly3Divisors(int N)
     {
-        //Your code here
-         //Your code here
         int count=0;
         for(int i=2; i*i<=N;i++)
         {
