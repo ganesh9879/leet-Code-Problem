@@ -60,10 +60,10 @@ class Insert
    
     public void insertAtEnd(int arr[],int sizeOfArray,int element)
     {
-          if(arr.length != arr[sizeOfArray-1])
-          {
+         // if(arr.length != arr[sizeOfArray-1])
+          //{
            arr[sizeOfArray-1]=element;
-          }
+          //}
     }
 }
 
