@@ -16,25 +16,25 @@ class Solution{
     */
     public static int maxConsecutiveOnes(int N)
     {
-          int count = 0;
-        int maxCount = 0;
-        while(N>0){
-            if(N%2==1){
-                count++;
-            }
-            else{
-                maxCount = Math.max(maxCount,count);
-                count = 0;
-            }
-            N = N/2;
-        }
-        maxCount = Math.max(maxCount,count);
-        return maxCount;
-      }
+        int  count =0;
+        int maxcount =0;
         
-    
-    
-}
+        while(N>0)
+        {
+            
+            if(N%2==1)
+            count++;
+            else
+            {
+               maxcount = Math.max(count,maxcount);
+               count =0;
+            }
+            N =N/2; 
+        }
+        maxcount = Math.max(count,maxcount);
+        return maxcount;
+    }
+}  
 
 
 
