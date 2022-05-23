@@ -28,7 +28,7 @@ class Solution
          String[] z = S.split("\\.");
         String d="";
 
-        for(int i=z.length-1 ;i>=0 ;i--)
+        for(int i=z.length-1;i>=0 ;i--)
             d+=z[i]+".";
         
         d = d.substring(0, d.length()-1);
