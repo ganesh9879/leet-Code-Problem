@@ -22,7 +22,8 @@ class GFG {
 //User function Template for Java
 
 class Solution {
-    int isPalindrome(String S) {
+    int isPalindrome(String S)
+    {
        
       int  n = S.length();
       String b ="";
