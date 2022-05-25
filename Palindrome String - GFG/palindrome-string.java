@@ -25,8 +25,9 @@ class Solution {
     int isPalindrome(String S)
     {
        
-      int  n = S.length();
-      String b ="";
+       int  n = S.length();
+     
+       String b ="";
       
        for(int i = n-1;i>=0;i--)
        {
